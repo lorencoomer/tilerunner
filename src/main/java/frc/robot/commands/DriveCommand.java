@@ -18,7 +18,7 @@ public class DriveCommand extends Command {
 
     @Override
     public void execute() {
-        driveTrain.SetSpeed(MathUtil.applyDeadband(-controller.getRawAxis(1), 0.0206767), MathUtil.applyDeadband(-controller.getRawAxis(4), 0.0206767));
+        driveTrain.SetSpeed(MathUtil.applyDeadband(-controller.getRawAxis(1), 0.02), MathUtil.applyDeadband(-controller.getRawAxis(4), 0.02));
     }
 
     @Override
